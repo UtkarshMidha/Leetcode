@@ -17,6 +17,7 @@ public:
             fast=fast->next->next;
             if(slow == fast) {
                 while(slow != entry) {
+                    
                     slow = slow -> next;
                     entry = entry -> next;
                 }
@@ -26,3 +27,9 @@ public:
        return NULL;
     }
 };
+// Distance traveled by slow when they meet: L1+L2
+// Distance traveled by fast when they meet: L1+L2+x+L2, where x is the remaining length of the cycle (meeting point to start of the cycle).
+
+// 2(L1+L2) = L1+L2+x+L2
+// 2L1 + 2L2 = L1+2L2+x
+// => x = L1
