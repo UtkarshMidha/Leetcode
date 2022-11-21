@@ -22,7 +22,7 @@ public:
                 int nextRow = currRow + dir.first, nextCol = currCol + dir.second;
 
                 // If there exists an unvisited empty neighbor:
-                if (0 <= nextRow && nextRow < rows && 0 <= nextCol && nextCol < cols \
+                if (0 <= nextRow && nextRow < rows && 0 <= nextCol && nextCol < cols 
                    && maze[nextRow][nextCol] == '.') {
                     
                     // If this empty cell is an exit, return distance + 1.
