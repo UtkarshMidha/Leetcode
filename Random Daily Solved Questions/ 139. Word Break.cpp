@@ -1,4 +1,4 @@
- class Solution {
+class Solution {
  public:
   bool wordBreak(string s, vector<string>& wordDict) {
     const int n = s.length();
